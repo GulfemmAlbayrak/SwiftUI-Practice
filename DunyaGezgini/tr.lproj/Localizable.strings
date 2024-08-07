@@ -1,0 +1,23 @@
+/* 
+  Localizable.strings
+  DunyaGezgini
+
+  Created by Gulfem ALBAYRAK on 5.08.2024.
+  
+*/
+
+// MARK: - DunyaGezginiApp
+"TAB_CONVERSION" = "ÇEVİRİCİ";
+"TAB_MAP" = "HARİTA";
+
+// MARK: - MapView
+"MAP_CITY_ISTANBUL" = "İSTANBUL";
+"MAP_CITY_LONDON" = "LONDRA";
+
+// MARK: - ContentView
+"CONVERSION_TEXT_FIELD_PLACEHOLDER" = "DEĞER";
+"CONVERSION_FAHRENHEIT" = "FAHRENHEIT";
+"CONVERSİON_IS_ACTUALLY" = "ASLINDA";
+"CONVERSION_DEGREES_CELCIUS" = "DERECE";
+
+

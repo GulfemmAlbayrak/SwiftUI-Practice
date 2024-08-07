@@ -1,0 +1,23 @@
+/* 
+  Localizable.strings
+  DunyaGezgini
+
+  Created by Gulfem ALBAYRAK on 5.08.2024.
+  
+*/
+
+// MARK: - DunyaGezginiApp
+"TAB_CONVERSION" = "CONVERSION";
+"TAB_MAP" = "MAP";
+
+// MARK: - MapView
+"MAP_CITY_ISTANBUL" = "ISTANBUL";
+"MAP_CITY_LONDON" = "LONDON";
+
+// MARK: - ContentView
+"CONVERSION_TEXT_FIELD_PLACEHOLDER" = "VALUE";
+"CONVERSION_FAHRENHEIT" = "FAHRENHEIT";
+"CONVERSİON_IS_ACTUALLY" = "IS ACTUALLY";
+"CONVERSION_DEGREES_CELCIUS" = "DEGREES CELCIUS";
+
+
