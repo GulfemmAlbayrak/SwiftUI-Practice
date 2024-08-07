@@ -21,6 +21,8 @@
 		01011BF52C61FC3C000DA38D /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01011BF42C61FC3C000DA38D /* Colors.xcassets */; };
 		01011BF72C61FEDA000DA38D /* GameListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01011BF62C61FEDA000DA38D /* GameListItem.swift */; };
 		01011BF92C6207F0000DA38D /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01011BF82C6207F0000DA38D /* DetailView.swift */; };
+		01E5EF0D2C63476C00D17E7D /* PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E5EF0C2C63476C00D17E7D /* PhotoPicker.swift */; };
+		01E5EF112C635F4800D17E7D /* ImageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E5EF102C635F4800D17E7D /* ImageStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,8 @@
 		01011BF42C61FC3C000DA38D /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		01011BF62C61FEDA000DA38D /* GameListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameListItem.swift; sourceTree = "<group>"; };
 		01011BF82C6207F0000DA38D /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		01E5EF0C2C63476C00D17E7D /* PhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPicker.swift; sourceTree = "<group>"; };
+		01E5EF102C635F4800D17E7D /* ImageStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +163,8 @@
 				01011BF82C6207F0000DA38D /* DetailView.swift */,
 				01011BBD2C610297000DA38D /* ContentView.swift */,
 				01011BF62C61FEDA000DA38D /* GameListItem.swift */,
+				01E5EF0C2C63476C00D17E7D /* PhotoPicker.swift */,
+				01E5EF102C635F4800D17E7D /* ImageStore.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -305,6 +311,8 @@
 			files = (
 				01011BBE2C610297000DA38D /* ContentView.swift in Sources */,
 				01011BF92C6207F0000DA38D /* DetailView.swift in Sources */,
+				01E5EF0D2C63476C00D17E7D /* PhotoPicker.swift in Sources */,
+				01E5EF112C635F4800D17E7D /* ImageStore.swift in Sources */,
 				01011BED2C611627000DA38D /* UsedGames+Formatter.swift in Sources */,
 				01011BF72C61FEDA000DA38D /* GameListItem.swift in Sources */,
 				01011BF32C61FBA3000DA38D /* Color+UsedGames.swift in Sources */,
@@ -477,6 +485,8 @@
 				DEVELOPMENT_TEAM = 34TSNP347B;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app needs photo library access to pick photo";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This app needs camera access to take photo";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -506,6 +516,8 @@
 				DEVELOPMENT_TEAM = 34TSNP347B;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app needs photo library access to pick photo";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This app needs camera access to take photo";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

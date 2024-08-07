@@ -10,26 +10,33 @@ import SwiftUI
 struct ContentView: View {
     
     @ObservedObject var gameStore = GameStore()
+    @ObservedObject var imageStore = ImageStore()
     
     @State var gameToDelete: Game?
     
     var body: some View {
-        NavigationView {
-            List {
+        
+        let  list = List {
                 ForEach(gameStore.games) { (game) in
                     NavigationLink(
                         destination: DetailView(
                             game: game,
                             gameStore: gameStore,
+                            imageStore: imageStore,
                             name: game.name,
-                            price: game.priceInDollars
+                            price: game.priceInDollars,
+                            selectedPhoto: imageStore.image(forKey: game.itemKey)
                         )
                         ) {
                             GameListItem(game: game)
                     }
                 }
                 .onDelete(perform: { indexSet in
-                    self.gameToDelete = gameStore.game(at: indexSet)
+                    let gameToDelete = gameStore.game(at: indexSet)
+                    self.gameToDelete = gameToDelete
+                    if let gameToDelete {
+                        self.imageStore.deleteImage(forKey: gameToDelete.itemKey)
+                    }
                 })
                 .onMove(perform: { indices, newOffset in
                     gameStore.move(indices: indices, to: newOffset)
@@ -51,8 +58,17 @@ struct ContentView: View {
                 })
                                                                                                                   ])
             }
+        if #available(iOS 16.0, *) {
+            NavigationStack {
+                list
+            }
+            .accentColor(.purple)
+        } else {
+            NavigationView {
+                list
+            }
+            .accentColor(.purple)
         }
-        .accentColor(.purple)
     }
 }
 
